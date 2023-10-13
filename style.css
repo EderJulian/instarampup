@@ -1,49 +1,50 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
+    /* box-sizing: border-box; */
+} 
 
 body {
-    display: flex;
-    height: 100px;
-    width: 100%;
-    font-family: 'Roboto',sans-serif;
-    max-width: 1400px;
-    margin-left: 50px;
     margin-right: auto;
-    padding: 0 10px;
+    margin-left: auto;
+    width: 90%;
+    font-family: 'Roboto',sans-serif;
     background: #fafafa;
 }
 
+nav {
+    padding-top: 2rem;
+    flex-direction: column;
+    display: flex;
+    padding-left: 3rem;
+    margin-right: 3rem;
+
+}
+
 .options {
+    
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
  .options .icons, .instlogo {
+    padding: 0.5rem;
     padding: 20px;
 
 
 }
 
 
-nav {
-
-    flex: 0,2;
-    min-width: 250px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-header {
+ header {
     width: 60%;
     margin: auto;
-    /* transform: translateY(50px); */
+    transform: translateY(50px);
     padding: 20px 0;
+}
+
+.container {
+    display: flex;
 }
 
 .perfil-container {
@@ -62,10 +63,10 @@ header {
 }
 
 .cabezera1 {
-    /* width: 290px; */
+    gap: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -81,6 +82,13 @@ header {
     background-color: #fafafa;
     border: solid #dbdbdb 1px;
     cursor: pointer;
+}
+
+.cabezera1 img {
+
+    width: 24px;
+    height: 24px;
+
 }
 
 
@@ -100,27 +108,38 @@ header {
 
 
 .historias {
-    display: flex;
-    width: 90px;
-    margin-top: 50px;
+    padding-top: 30px;
     font-size: 14px;
-    font-weight: 600;
     text-align: center;
+    gap: 30px;
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    
 }
 .historiasterry img{
     
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
     cursor: pointer;
 }
-.linea {
+
+ .linea {
 
     width: 100%;
     height: 1px;
     margin: auto;
     background-color: #dbdbdb;
 }
+
+
+main {
+
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
 .main-nav {
 
     display: flex;
@@ -134,38 +153,49 @@ header {
     font-size: 13px;
 }
 
-main {
-
-    width: 70%;
-    margin: auto;
-    margin-top: 60px;
-}
-
 .pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-    display: grid;
-    justify-items: stretch;
-    grid-template-columns: repeat(3,32%);
-    grid-template-rows: repeat(5,auto);
-    gap: 2%;
-    /* height: auto; */
 }
-.pics div > img {
 
-    width: 100%;
+.pics img {
+    padding-top:1rem;
+    padding-bottom: 1rem;
     cursor: pointer;
 } 
 
 
-.container {
+
+
+ footer {
+
+    gap: 20px;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+}   
+
+
+.footerow {
+    gap: 30px;
+    justify-content: center;
     display: flex;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
 }
 
-footer {
-    display: flex;
-    width: 662px;
-    height: 58px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
+
+
+
+
+
